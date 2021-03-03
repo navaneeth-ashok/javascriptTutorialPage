@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap');
+
+html {
+  box-sizing:border-box; /* allow width and height to include everything up until the border */
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  /*font-family:Arial,Helvetica,sans-serif;
+  font-size:1em;
+  line-height:1.2;
+  */
+  font:normal 1.1em 'Varela Round', sans-serif;
+  margin:0 auto;
+    background-color: #caf3dc;
+}
+h1, h2, h3 {
+  /*font-family:"Trebuchet MS",Trebuchet,Tahoma,Arial,sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    color: #00453a;
+    font-weight:900;
+    font-size: 2.6em;
+}
+
+h2{
+    color: #0a461c;
+    font-size: 1.7em;
+}
+
+h3{
+    color: #007965;
+    font-size: 1.4em;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  width:1px;
+  height:1px;
+}
+.page-container {
+  max-width:1200px;
+  margin:0 auto; /* center a block element horizontally */
+}
+
+#main{
+    width: 80%;
+    float: right;
+    display: inline-block;
+    background-color: #f8f1f1;
+    color: #462b2b;
+    padding: 2%;
+}
+.sidebar{
+    position: fixed;
+    top:35%;
+    left:12%;
+    width: 18%;
+    float: left;
+}
+
+.sidebar ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+.sidebar li{
+    padding-bottom: 5px;
+    margin:0;
+}
+
+
+.sidebar a{
+    text-decoration: none;
+    color: #381300;
+}
+
+.sidebar a:hover{
+    color: #e84000;
+}
+
+
+#footer{
+    clear: both;
+}
+
+#header{
+    background-color: #00af91;
+    padding: 2%;
+}
+
+#header h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+
+#header li{
+    display: inline-block;
+    padding-right: 10%;
+}
+#header a{
+    color: azure;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+#header a:hover{
+    color: #f1804b;
+}
+
+
+
+.menu {
+    padding-top: 1%;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.code{
+    background-color: #d3e0e8;
+    border-radius: 10px;
+    padding: 10px;
+    color: #155454;
+}
+
+.printOrigArr{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    color: #126720;
+}
+
+.printResult{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    color: #126720;
+    display:none;
+}
+
+input[type=text]{
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 1.2em;
+    border-style: none;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.button{
+    background-color: #4CAF50;
+    padding: 1%;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #275a29; 
+}
+
+.main-content h2{
+    padding-top: 30px;
+}
+
+#footer{
+    background-color: darkslategrey;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+.new-line{
+    display: block;
+    padding-bottom: 10px;
+}

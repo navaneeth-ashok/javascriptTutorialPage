@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascrip Array Tutorial</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="script/script.js"></script>
+     </head>
+    <body>
+        <header id="header">
+            <div class="page-container">
+                <h2 id="site-name">Javascript Tutorial Page</h2>
+            </div>
+            <nav id="main-menu">
+                <div class="page-container">
+                    <h3 class="hidden">Main navigation</h3>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">Functions</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="page-container">
+            <main id="main">
+            
+                <!--Banner-->
+                <div class="welcome-banner">
+                    <!--Banner Title-->
+                    <div class="banner-content">
+                        <h1 class="banner-title">Javascript Array Tutorial</h1>
+                    </div>
+                </div>
+                <!--Signup section-->
+                <section id="array_intro">
+                    <section id="introduction">
+                        <div class="main-content">
+                            <h2>What is a Javascript Array?</h2>
+                            <p>The Array object in Javascript can store multiple values in a single variable. An array can store many values under a single name, and all the elements can be accessed using index numbers.</p>
+                            <p>Unlike other languages, the Javascript array can hold variables of differernt data type as well.</p>
+                        </div>
+                    </section>
+                    <section id="create_array">
+                        <div class="main-content">
+                            <h3>Creating an Array</h3>
+                            <p>To create an array you can use the following format</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>var arrayName = [];</p>
+                                <p>var sampleArray = ["batman", "superman", "spiderman", "wonderwoman", "ironman", 34, 56, "hawkeye", 1.21];</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="access_array">
+                        <div class="main-content">
+                            <h3>Accessing an Array elements</h3>
+                            <p>To access any array element you can use the following format</p>
+                            <p>arrayName[index of the element]</p>
+                            <div class="code">
+                                <p>var zerothElement = arrayName[0];</p>
+                            </div>
+                            <p>Array index starts from 0</p>
+                            <p>Consider the sample array, input different index number to access different values inside the array</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="arrIndex0" placeholder="Enter index">
+                            <button onclick="printArrEle()" class="button">Try it</button>
+                            <p id="accArr" class="printResult"></p>
+
+                        </div>
+                    </section>
+                    <section id="change_array_ele">
+                        <div class="main-content">
+                            <h3>Changing an Array element</h3>
+                            <p>To change any array element you can use the following format</p>
+                            <div class="code">
+                                <p>arrayName[index of the element] = new value;</p>
+                            </div>
+                            <p>Consider the sample array, change the value of elements by mentioning the key and value</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="arrIndex1" placeholder="Enter index">
+                            <input type="text" id="arrValue1" placeholder="Enter value">
+                            <button onclick="changeArrEle()" class="button">Try it</button>
+                            <button onclick="resetArrEle('chngArr')" class="button">Reset</button>
+                            <p id="chngArr" class="printResult"></p>
+                        </div>
+                    </section>
+                </section>
+                <section id="array_methods">
+                    <section id="introduction">
+                        <div class="main-content">
+                            <h2>What are some Javascript Array methods?</h2>
+                            <p>The javascript offers a few inbuilt methods which we can use on the array.</p>
+                            <p>Let's have a look at them.</p>
+                        </div>
+                    </section>
+                    <section id="popping_array">
+                        <div class="main-content">
+                            <h3>Popping</h3>
+                            <p>Popping means, we are <em>removing</em> elements from an array</p>
+                            <p>We use pop() method to remove the last element from an array.</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <button onclick="popArrEle()" class="button">Pop</button>
+                            <button onclick="resetArrEle('popArr')" class="button">Reset</button>
+                            <p id="popArr" class="printResult"></p>
+                        </div>
+                    </section>
+                    <section id="shifting_aray">
+                        <div class="main-content">
+                            <h3>Shifting</h3>
+                            <p>Shifting means, we are <em>removing</em> elements from an array</p>
+                            <p>We use shift() method to remove the first element from an array and all other elements shifts one position down in the index list (decrements the index value).</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <button onclick="shiftArrEle()" class="button">Shift</button>
+                            <button onclick="resetArrEle('shiftOut')" class="button">Reset</button>
+                            <p id="shiftOut" class="printResult"></p>
+                        </div>
+                    </section>
+                    <section id="pushing_array">
+                        <div class="main-content">
+                            <h3>Pushing</h3>
+                            <p>Pushing means, we are <em>adding</em> elements to an array</p>
+                            <p>We use push() method to add an element to the end of an array.</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="pushVal" placeholder="Enter value">
+                            <button onclick="pushArrEle()" class="button">Push</button>
+                            <button onclick="resetArrEle('pushArr')" class="button">Reset</button>
+                            <p id="pushArr" class="printResult"></p>
+                        </div>
+                    </section>
+                    <section id="unshifting_aray">
+                        <div class="main-content">
+                            <h3>Unshifting</h3>
+                            <p>Unshifting means, we are <em>adding</em> elements to an array</p>
+                            <p>We use unshift() method to add an element to the start of an array.</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="unshiftVal" placeholder="Enter value">
+                            <button onclick="unshiftArrEle()" class="button">Unshift</button>
+                            <button onclick="resetArrEle('unshiftArr')" class="button">Reset</button>
+                            <p id="unshiftArr" class="printResult"></p>
+                        </div>
+                    </section>
+                    <section id="deleting_array">
+                        <div class="main-content">
+                            <h3>Deleting</h3>
+                            <p>Deleting means, we are <em>deleting</em> an elements from an array.</p>
+                            <p>We use delete method to delete an element and the deleted element will be reassigned as undefined.</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="deleteVal" placeholder="Enter index">
+                            <button onclick="deleteArrEle()" class="button">Delete</button>
+                            <button onclick="resetArrEle('deleteArr')" class="button">Reset</button>
+                            <p id="deleteArr" class="printResult"></p>
+                        </div>
+                    </section>
+                    <section id="splicing_array">
+                        <div class="main-content">
+                            <h3>Splicing</h3>
+                            <p>We use delete method to delete an element and the deleted element will be reassigned as undefined.</p>
+                            
+                        </div>
+                    </section>
+
+                </section>
+            
+            </main>
+            <aside id="sidebar-one" class="sidebar">
+                <h2 id="test-title">JS Arrays</h2>
+                <ul>
+                    <li><a href="#create_array">Creating Array</a></li>
+                    <li><a href="#access_array">Accessing Array elements</a></li>
+                    <li><a href="#change_array_ele">Changing Array elements</a></li>
+                    <li><a href="#popping_array">Popping</a></li>
+                    <li><a href="#shifting_aray">Shifting</a></li>
+                    <li><a href="#pushing_array">Pushing</a></li>
+                    <li><a href="#unshifting_aray">Unshifting</a></li>
+                    <li><a href="#deleting_array">Deleting</a></li>
+                    <li><a href="#splicing_array">Splicing</a></li>
+                </ul>
+            </aside>
+        </div>
+        <footer id="footer">
+             
+            <div class="copyright">
+                &copy; Copyright Navaneeth Ashok, 2021. All rights reserved. This is a fake website for Javascript Web Programming Assignment.
+            </div>
+        </footer>
+    </body>
+</html>
