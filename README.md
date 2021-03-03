@@ -1,0 +1,1 @@
+A small tutorial page teaching few methods of Javascript Array
