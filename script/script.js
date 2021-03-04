@@ -58,9 +58,15 @@ function unshiftArrEle(){
 
 function deleteArrEle(){
     var value = document.getElementById("deleteVal").value;
+    document.getElementById("deleteArrEleBefore").style.display = "block";
+    document.getElementById("deleteArrEleBefore").innerHTML = "Before: array["+ value + "] = " + globalArray[value];
     delete globalArray[value];
     document.getElementById("deleteArr").style.display = "block";
+    console.log(globalArray);
     document.getElementById("deleteArr").innerHTML = globalArray;
+    document.getElementById("deleteArrEleAfter").style.display = "block";
+    document.getElementById("deleteArrEleAfter").innerHTML = "After: array["+ value + "] = " + globalArray[value];
+    
 }
 
 function sandBox(){

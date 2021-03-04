@@ -146,12 +146,16 @@
                         <div class="main-content">
                             <h3>Deleting</h3>
                             <p>Deleting means, we are <em>deleting</em> an elements from an array.</p>
-                            <p>We use delete method to delete an element and the deleted element will be reassigned as undefined.</p>
+                            <p>We use delete method to delete an element and the deleted element will be reassigned as undefined or empty.</p>
+                            <p>Please use the inspect tool to see the changes to the array: <em>Ctrl + Shift + I</em></p>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <input type="text" id="deleteVal" placeholder="Enter index">
                             <button onclick="deleteArrEle()" class="button">Delete</button>
                             <button onclick="resetArrEle('deleteArr')" class="button">Reset</button>
-                            <p id="deleteArr" class="printResult"></p>
+                            <p id="deleteArr" class="printResult">
+                            </p>
+                            <p id="deleteArrEleBefore" class="printResult">
+                            <p id="deleteArrEleAfter" class="printResult">
                         </div>
                     </section>
                     <section id="sandbox">
