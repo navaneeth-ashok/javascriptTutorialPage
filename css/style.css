@@ -200,3 +200,19 @@ input[type=text]{
 #references a:hover{
     color: forestgreen;
 }
+
+@media screen and (max-width:480px) {
+    .sidebar {
+        width:100%;
+        position: relative;
+        display: block;
+        float: left;
+    }
+    #header li{
+        display: block;
+    }
+    #main {
+        width:100%;
+        margin-left:0;
+    }
+}
