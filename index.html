@@ -51,6 +51,15 @@
                                 <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
                                 <p>var arrayName = [];</p>
                                 <p>var sampleArray = ["batman", "superman", "spiderman", "wonderwoman", "ironman", 34, 56, "hawkeye", 1.21];</p>
+                                <p>// input your custom array in the field below</p>
+                                <p>// click on execute and slide the toggle to switch between your</p>
+                                <p>// custom array and prebuilt sampleArray</p>
+                                <input type="text" id="customArrayVal" placeholder="var myArray = ['1', 2, 'foo', 3.14,......,'<anything>']">
+                                <button onclick="inputCustomArray()" class="button">Execute</button>
+                                <label class="switch">
+                                    <input type="checkbox" id="chkbxID" onclick="toggleDefaultArray()">
+                                    <span class="slider round"></span>
+                                </label>
                             </div>
                         </div>
                     </section>
