@@ -101,6 +101,10 @@
                             <h3>Popping</h3>
                             <p>Popping means, we are <em>removing</em> elements from an array</p>
                             <p>We use pop() method to remove the last element from an array.</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>arrayName.pop(();</p>
+                            </div>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <button onclick="popArrEle()" class="button">Pop</button>
                             <button onclick="resetArrEle('popArr')" class="button">Reset</button>
@@ -112,6 +116,10 @@
                             <h3>Shifting</h3>
                             <p>Shifting means, we are <em>removing</em> elements from an array</p>
                             <p>We use shift() method to remove the first element from an array and all other elements shifts one position down in the index list (decrements the index value).</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>arrayName.shift();</p>
+                            </div>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <button onclick="shiftArrEle()" class="button">Shift</button>
                             <button onclick="resetArrEle('shiftOut')" class="button">Reset</button>
@@ -123,6 +131,10 @@
                             <h3>Pushing</h3>
                             <p>Pushing means, we are <em>adding</em> elements to an array</p>
                             <p>We use push() method to add an element to the end of an array.</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>arrayName.push("ele4");</p>
+                            </div>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <input type="text" id="pushVal" placeholder="Enter value">
                             <button onclick="pushArrEle()" class="button">Push</button>
@@ -135,6 +147,10 @@
                             <h3>Unshifting</h3>
                             <p>Unshifting means, we are <em>adding</em> elements to an array</p>
                             <p>We use unshift() method to add an element to the start of an array.</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>arrayName.unshift("ele0");</p>
+                            </div>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <input type="text" id="unshiftVal" placeholder="Enter value">
                             <button onclick="unshiftArrEle()" class="button">Unshift</button>
@@ -147,6 +163,10 @@
                             <h3>Deleting</h3>
                             <p>Deleting means, we are <em>deleting</em> an elements from an array.</p>
                             <p>We use delete method to delete an element and the deleted element will be reassigned as undefined or empty.</p>
+                            <div class="code">
+                                <p>var arrayName = ["ele1", "ele2", "ele3"];</p>
+                                <p>delete arrayName[0];</p>
+                            </div>
                             <p>Please use the inspect tool to see the changes to the array: <em>Ctrl + Shift + I</em></p>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <input type="text" id="deleteVal" placeholder="Enter index">
@@ -162,8 +182,11 @@
                         <div class="main-content">
                             <h3>Javascript Sandbox</h3>
                             <p>Please use the following text field to run, any Javascript code. The current status of the array will be shown after every execution.</p>
-                            <p>Our array name is globalArray</p>
-                            <p>Eg: globalArray.push("Krypto");</p>
+                            <div class="code">
+                                <p>// our array name is globalArray</p>
+                                <p>// run any code you want, find the example below</p>
+                                <p>globalArray.push("Krypto");</p>
+                            </div>
                             <p class="printOrigArr"><script>showOriginalArray()</script></p>
                             <input type="text" id="sandVal" placeholder="Enter javascript command">
                             <button onclick="sandBox()" class="button">Execute</button>
