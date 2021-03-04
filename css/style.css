@@ -185,3 +185,17 @@ input[type=text]{
     display: block;
     padding-bottom: 10px;
 }
+
+#references h3{
+    text-align: center;
+}
+#references a{
+    text-decoration: none;
+    color: darkgreen;
+}
+#references p{
+    text-align: center;
+}
+#references a:hover{
+    color: forestgreen;
+}
