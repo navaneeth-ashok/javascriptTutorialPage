@@ -203,7 +203,7 @@ input[type=text]{
 
 @media screen and (max-width:480px) {
     .sidebar {
-        width:100%;
+        width:90%;
         position: relative;
         display: block;
         float: left;
