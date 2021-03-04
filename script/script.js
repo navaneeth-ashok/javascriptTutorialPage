@@ -63,6 +63,14 @@ function deleteArrEle(){
     document.getElementById("deleteArr").innerHTML = globalArray;
 }
 
+function sandBox(){
+    var value = document.getElementById("sandVal").value;
+    var F = eval(value);
+    console.log(F);
+    document.getElementById("sandBoxArr").style.display = "block";
+    document.getElementById("sandBoxArr").innerHTML = globalArray;
+}
+
 function changeArrEle(){
     var index = document.getElementById("arrIndex1").value;
     var value = document.getElementById("arrValue1").value;

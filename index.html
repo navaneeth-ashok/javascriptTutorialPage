@@ -154,10 +154,18 @@
                             <p id="deleteArr" class="printResult"></p>
                         </div>
                     </section>
-                    <section id="splicing_array">
+                    <section id="sandbox">
                         <div class="main-content">
-                            <h3>Splicing</h3>
-                            <p>We use delete method to delete an element and the deleted element will be reassigned as undefined.</p>
+                            <h3>Javascript Sandbox</h3>
+                            <p>Please use the following text field to run, any Javascript code. The current status of the array will be shown after every execution.</p>
+                            <p>Our array name is globalArray</p>
+                            <p>Eg: globalArray.push("Krypto");</p>
+                            <p class="printOrigArr"><script>showOriginalArray()</script></p>
+                            <input type="text" id="sandVal" placeholder="Enter javascript command">
+                            <button onclick="sandBox()" class="button">Execute</button>
+                            <button onclick="resetArrEle('sandBoxArr')" class="button">Reset</button>
+                            <p id="sandBoxReturn" class="printResult"></p>
+                            <p id="sandBoxArr" class="printResult"></p>
                             
                         </div>
                     </section>
@@ -176,7 +184,6 @@
                     <li><a href="#pushing_array">Pushing</a></li>
                     <li><a href="#unshifting_aray">Unshifting</a></li>
                     <li><a href="#deleting_array">Deleting</a></li>
-                    <li><a href="#splicing_array">Splicing</a></li>
                 </ul>
             </aside>
         </div>
