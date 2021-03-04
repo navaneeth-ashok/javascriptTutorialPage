@@ -211,6 +211,9 @@ input[type=text]{
     #header li{
         display: block;
     }
+    body {
+        margin:0;
+    }
     #main {
         width:100%;
         margin-left:0;
